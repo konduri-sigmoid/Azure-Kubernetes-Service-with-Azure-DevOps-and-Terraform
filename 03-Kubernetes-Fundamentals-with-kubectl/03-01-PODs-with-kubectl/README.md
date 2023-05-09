@@ -94,7 +94,7 @@ kubectl delete pod my-first-pod
       - check or create a public IP address 
     - Load Balancing Rules
       - we can see public IP attached on load balancer 
-      - ![](/Users/malik/Documents/Azure-Kubernetes-Service-with-Azure-DevOps-and-Terraform/03-Kubernetes-Fundamentals-with-kubectl/03-01-PODs-with-kubectl/im.png)
+      - [image link](https://github.com/konduri-sigmoid/Azure-Kubernetes-Service-with-Azure-DevOps-and-Terraform/blob/master/03-Kubernetes-Fundamentals-with-kubectl/03-01-PODs-with-kubectl/im.png)
 
   - Azure Public IP 
 ```
