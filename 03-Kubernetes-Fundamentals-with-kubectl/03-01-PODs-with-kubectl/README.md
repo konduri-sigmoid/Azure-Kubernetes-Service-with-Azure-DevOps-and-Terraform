@@ -91,7 +91,11 @@ kubectl delete pod my-first-pod
 - Verify the following before LB Service creation
   - Azure Standard Load Balancer created for Azure AKS Cluster
     - Frontend IP Configuration
+      - check or create a public IP address 
     - Load Balancing Rules
+      - we can see public IP attached on load balancer 
+      - ![](/Users/malik/Documents/Azure-Kubernetes-Service-with-Azure-DevOps-and-Terraform/03-Kubernetes-Fundamentals-with-kubectl/03-01-PODs-with-kubectl/im.png)
+
   - Azure Public IP 
 ```
 # Create  a Pod
