@@ -95,6 +95,9 @@ kubectl delete pod my-first-pod
     - Load Balancing Rules
       - we can see public IP attached on load balancer 
       - [image link](https://github.com/konduri-sigmoid/Azure-Kubernetes-Service-with-Azure-DevOps-and-Terraform/blob/master/03-Kubernetes-Fundamentals-with-kubectl/03-01-PODs-with-kubectl/im.png)
+      - And also In backend pools we can see node connected there
+      - [image link](https://github.com/konduri-sigmoid/Azure-Kubernetes-Service-with-Azure-DevOps-and-Terraform/blob/master/03-Kubernetes-Fundamentals-with-kubectl/03-01-PODs-with-kubectl/im2.png)
+
 
   - Azure Public IP 
 ```
@@ -104,11 +107,19 @@ kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
 
 # Expose Pod as a Service
 kubectl expose pod <Pod-Name>  --type=LoadBalancer --port=80 --name=<Service-Name>
+
+# from the below command we are goind to create a new service
+
 kubectl expose pod my-first-pod  --type=LoadBalancer --port=80 --name=my-first-service
 
 # Get Service Info
 kubectl get service
 kubectl get svc
+
+<!--  In description you can see the  external ip address 
+
+In Kubernetes, an external IP address is an IP address that is assigned to a service and is accessible from outside the cluster.  -->
+
 
 # Describe Service
 kubectl describe service my-first-service
@@ -116,6 +127,8 @@ kubectl describe service my-first-service
 # Access Application
 http://<External-IP-from-get-service-output>
 ```
+- When we create a pod and exposed pod as a service we can see a new public ip is created and mapped in the loadbalacing fronend ip and a new new load balancer load is attached with port and some other paramaters
+
 - Verify the following after LB Service creation
   - Azure Standard Load Balancer created for Azure AKS Cluster
     - Frontend IP Configuration
