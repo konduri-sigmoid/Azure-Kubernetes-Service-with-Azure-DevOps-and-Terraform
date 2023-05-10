@@ -16,6 +16,7 @@ kubectl rollout history deployment/my-first-deployment
 
 ### Verify changes in each revision
 - **Observation:** Review the "Annotations" and "Image" tags for clear understanding about changes.
+- Annotations sections will show you the **kubectl** command which is used
 ```
 # List Deployment History with revision information
 kubectl rollout history deployment/my-first-deployment --revision=1
