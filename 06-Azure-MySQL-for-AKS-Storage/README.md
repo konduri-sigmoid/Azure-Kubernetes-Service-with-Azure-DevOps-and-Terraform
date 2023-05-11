@@ -127,4 +127,3 @@ kubectl get all
 
 # Delete Azure MySQL Database
 ```
-![ecef](Screenshot%202023-05-11%20at%208.37.12%20AM.png)
