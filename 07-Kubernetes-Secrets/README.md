@@ -7,10 +7,12 @@
 ## Step-02: Create Secret for MySQL DB Password
 ### 
 ```
+# Can create base encoded with any one of these steps
 # Mac
 echo -n 'dbpassword11' | base64
 
 # URL: https://www.base64encode.org
+Paste your password then it will give encoded base 64 string
 ```
 ### Create Kubernetes Secrets manifest
 ```yml
