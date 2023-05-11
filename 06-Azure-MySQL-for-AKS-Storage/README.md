@@ -14,7 +14,7 @@
 - **Server Details**
   - Server name: akswebappdb (This name is based on availability - in your case it might be something else)
   - Data source: none
-  - Location: (US) East US
+  - **Location: (US) East US (Where the cluster is created)**
   - Version: 5.7 (default)
   - **Compute + Storage**
     - Pricing Tier: Basic
@@ -28,7 +28,8 @@
   - Password: Redhat1449
   - Confirm password: Redhat1449
 - **Review + Create**  
-- It will take close to 15 minutes to create the database. 
+- It will take close to 15 minutes to create the database.
+- **Server name will be the endpoint.**
 
 ## Step-03: Update Security Settings for Database
 - Go to **Azure Database for MySQL Servers** -> **akswebappdb**
@@ -40,6 +41,7 @@
 - It will take close to 15 minutes for changes to take place. 
 
 ```
+# From terminal
 # Template
 mysql --host=mydemoserver.mysql.database.azure.com --user=myadmin@mydemoserver -p
 
@@ -85,7 +87,7 @@ mysql> exit
           - name: DB_PASSWORD
             value: "dbpassword11"               
 
-# Change To dbadmin@<YOUR-Azure-MYSQL-DB-NAME>
+# Change To dbadmin@<YOUR-Azure-MYSQL-DB-NAME> it is displayed as server admin login name
             - name: DB_USERNAME
               value: "dbadmin@akswebappdb"            
             - name: DB_PASSWORD
