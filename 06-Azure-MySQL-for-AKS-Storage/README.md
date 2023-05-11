@@ -92,8 +92,8 @@ mysql> exit
               value: "dbadmin@akswebappdb"            
             - name: DB_PASSWORD
               value: "Redhat1449"                  
-             
 ```
+![Alt text](https://github.com/konduri-sigmoid/Azure-Kubernetes-Service-with-Azure-DevOps-and-Terraform/blob/master/06-Azure-MySQL-for-AKS-Storage/Screenshot%202023-05-11%20at%208.37.12%20AM.png)
 
 ## Step-06: Deploy User Management WebApp and Test
 ```
