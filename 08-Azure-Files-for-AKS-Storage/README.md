@@ -137,3 +137,5 @@ kubectl delete -f kube-manifests-v2/
 
 ## References
 - https://docs.microsoft.com/en-us/azure/aks/azure-files-dynamic-pv
+
+Added from vs git extension
